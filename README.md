@@ -1,1 +1,1 @@
-# js
+This is all about the Javascript learning and notes
