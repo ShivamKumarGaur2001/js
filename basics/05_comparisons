@@ -1,0 +1,12 @@
+console.log(null > 0) // false
+console.log(null == 0) // false
+console.log(null >=0) // true
+/*
+    the resson that == and < > >=(comparison) works differently
+    comparisons convert null to a number and treating it as 0;
+    that's why 1st and 3rd are true and false
+    for undefined all the comparison return false
+ */
+console.log(2 == "2")
+console.log(2 === "2")
+/*  === check data value and data type as well as */
