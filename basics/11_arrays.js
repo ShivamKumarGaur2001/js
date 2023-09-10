@@ -64,5 +64,7 @@ console.log(Array.from({name:"shivam"})); // interesting
 let n1=100
 let n2=200
 let n3=300
-console.log(Array.of(n1,n2,n3));
+console.log(Array.of(n1,n2,n3)); 
+
+console.log("array complete");
 
