@@ -54,6 +54,7 @@ function handleObject(anyObject){
 handleObject(user)
 handleObject({
     name:"skg",
-    price:800
+    price:800 
+    
 }) 
 
