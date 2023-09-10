@@ -55,4 +55,4 @@ handleObject(user)
 handleObject({
     name:"skg",
     price:800
-})
+}) 
