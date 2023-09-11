@@ -33,7 +33,7 @@ one()
  }
  
 
- console.log(addTwo(5));  // shows error 
+ console.log(addTwo(5));  // shows error as addTwo not defined yet
  const addTwo = function(num){    // second type of function declaration 
     return num+2
  }
