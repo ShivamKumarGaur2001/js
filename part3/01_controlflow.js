@@ -1,29 +1,29 @@
 //**********************    if-else statements     ***************************//
 
-// if(2 == "2"){  // check only value
-//     console.log("executed");
-// }
-// if(2==="2"){  // check both value and data type
-//     console.log("executed 1");
-// }
-// else if(2=="2"){
-//     console.log("different data type");
-// }
-// else{
-//     console.log("not equal");
-// }
+if(2 == "2"){  // check only value
+    console.log("executed");
+}
+if(2==="2"){  // check both value and data type
+    console.log("executed 1");
+}
+else if(2=="2"){
+    console.log("different data type");
+}
+else{
+    console.log("not equal");
+}
 
-// const userLoggedIn=true;
-// const debitCard=true;
-// if(userLoggedIn && debitCard){
-//     console.log("allow to buy");
-// }
-// else if(userLoggedIn){
-//     console.log("don't have debit card");
-// }
-// else{
-//     console.log("don't log properly");
-// }
+const userLoggedIn=true;
+const debitCard=true;
+if(userLoggedIn && debitCard){
+    console.log("allow to buy");
+}
+else if(userLoggedIn){
+    console.log("don't have debit card");
+}
+else{
+    console.log("don't log properly");
+}
 
 //***********   switch statement      ***************//
 /*
