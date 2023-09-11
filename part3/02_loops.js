@@ -1,5 +1,5 @@
 //iterations 
-//**    for loop  ****** */
+//******    for loop  *******/
 const array =[1,2,3,4,5,6,7,8]
 for (let i = 0; i < array.length; i++) {
     const element = array[i];
@@ -17,14 +17,14 @@ for (let i = 0; i < array.length; i++) {
 }
 
 
-//***   while loop       ***/
+//******   while loop       ******/
 let index=0;
 while (index<=5) {
     console.log(index);
     index++;
 }
 
-//***   do-while loop   ****/
+//******   do-while loop   ******/
 let condition=3
 do {
     console.log(condition);
