@@ -35,11 +35,11 @@ const newNumbers=myNumbers.map( (num) => num +10).map( (num) => num+1).filter( (
 
 
 /*    reduce function    */
-// const sum=myNumbers.reduce( function (acc,currVal){
-//     console.log(`acc =${acc} and current Value =${currVal}`);
-//     return acc+currVal
-// },0) // 0 initial value of accumlator 
-// console.log(sum);
+const sum=myNumbers.reduce( function (acc,currVal){
+    console.log(`acc =${acc} and current Value =${currVal}`);
+    return acc+currVal
+},0) // 0 initial value of accumlator 
+console.log(sum);
 
 
 // using arrow function
