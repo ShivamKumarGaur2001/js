@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code</title>
+</head>
+<body style="background-color: #212211; color: #fff;">
+    <ul class="language">
+        <li>javascript</li>
+        <li>react</li>
+    </ul>    
+</body>
+<script>
+    function addLanguage(langName){
+        const listItem = document.createElement('li')
+        listItem.innerHTML= `${langName}`
+        document.querySelector('.language').appendChild(listItem)
+        
+    }
+    // always add at end so full tree traversal 
+    addLanguage("python")
+    addLanguage("java")
+    function addOptiLanguage(langName){
+        const li=document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage("golang")
+
+    // edit 
+    const secondLang = document.querySelector("li:nth-child(2)")
+    const newLi = document.createElement('li')
+    newLi.textContent="mojo"
+    secondLang.replaceWith(newLi) 
+    // edit
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML='<li>Typescript</li>'
+
+    // remove
+    const lastLang =document.querySelector('li:last-child')
+    lastLang.remove()
+</script>
+</html>
