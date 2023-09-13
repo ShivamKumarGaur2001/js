@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>chai aur code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log("shivam");
+    // },2000) // not part of core js and web browser 
+
+    const sayName=function(){
+        console.log("shivam");
+    }
+    setTimeout(sayName,2000) // just give function reference not called it
+
+    const changeText = function(){
+        document.querySelector('h1').innerHTML="best js series on yt"
+    }
+    const changeMe = setTimeout(changeText,5000)
+    // clearTimeout(changeMe)
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(changeMe)
+        console.log("event stopped");
+    })
+
+</script>
+</html>
