@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>XMLHttpRequest --> readyState</h2>
+    <ul>
+        <li> 0	UNSENT	Client has been created. open() not called yet.</li>
+        <li> 1	OPENED	open() has been called.</li>
+        <li> 2	HEADERS_RECEIVED	send() has been called, and headers and status are available.</li>
+        <li> 3	LOADING	Downloading; responseText holds partial data.</li>
+        <li> 4	DONE	The operation is complete.</li>
+    </ul>
+</body>
+<script>
+    // ajx 
+    const xhr = new XMLHttpRequest();
+    xhr.OPEN('GET','https://api.github.com/users/hiteshchoudhary')
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+        if(xhr.readyState === 4){
+            const data = JSON.parse(this.responseText)   // from browser data come in strinf format
+            console.log(typeof data);
+            console.log(data.followers);
+        }
+    }
+    xhr.send()
+
+</script>
+</html>
