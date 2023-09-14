@@ -16,8 +16,7 @@ javascript is a prototype language but ES6 provide class facility
 - **object literal**
 
 ```Javascrpit
-
-    const user = {
+        const user = {
         username: "shivam",
         loginCount:88,
         signedIn:true
@@ -32,7 +31,7 @@ javascript is a prototype language but ES6 provide class facility
 
 ```
 
-- **constructor function** : new keyowrd used to create new context
+- **constructor function** : new keyword used to create new context
 
 
 ```Javascript
@@ -57,6 +56,8 @@ javascript is a prototype language but ES6 provide class facility
 
     console.log(userone) // { username:"shivam",logincount:12,isloggedin :true}
     console.log(usertwo) // { username:"sonu",logincount:10,isloggedin :false}
+
+    console.log(userone.construtor) // reference to it self
 
 ```
 
