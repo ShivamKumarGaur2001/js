@@ -13,7 +13,7 @@ javascript is a prototype language but ES6 provide class facility
 
 ## parts of OOP
 
-object literal
+- **object literal**
 
 ```Javascrpit
 
@@ -25,14 +25,41 @@ object literal
         getuserDetails : function(){
             console.log(`got user details from database ${this.username}`) // this keyword used for current context
         }
-        console.log(user.username)
-        console.log(user.getuserDetails())
     }
+    console.log(user.username)
+    console.log(user.getuserDetails())
     
 
 ```
 
-- constructor function
+- **constructor function** : new keyowrd used to create new context
+
+
+```Javascript
+    // new keyowrd used to create new context and 
+    // step 1- > empty object create
+    // step 2- > construtor function called
+    // step 3 -> this keyword inject values
+    // step 4 -> we get the values
+    function user(username,logincount,isloggedin){
+        this.username=username;
+        this.logincount=logincount;
+        this.isloggedin=isloggedin;
+        return this // return this optional
+    }
+    const userone =user("shivam",12,true)
+    console.log(userone) // { username:"shivam",logincount:12,isloggedin :true}
+    const usertwo=user("sonu",10,false)
+    console.log(userone) // { username:"sonu",logincount:10,isloggedin :false}  --> values overwrite as they change in the same context
+
+    const userone =new user("shivam",12,true)
+    const usertwo=new user("sonu",10,false)
+
+    console.log(userone) // { username:"shivam",logincount:12,isloggedin :true}
+    console.log(usertwo) // { username:"sonu",logincount:10,isloggedin :false}
+
+```
+
 - prototypes
 - classes
 - instances
