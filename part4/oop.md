@@ -1,4 +1,4 @@
-# javascript and classes\
+# javascript and classes
 
 javascript is a prototype language but ES6 provide class facility
 
@@ -23,7 +23,7 @@ object literal
         signedIn:true
 
         getuserDetails : function(){
-            console.log("got user details from database")
+            console.log(`got user details from database ${this.username}`) // this keyword used for current context
         }
         console.log(user.username)
         console.log(user.getuserDetails())
@@ -38,6 +38,7 @@ object literal
 - instances
 
 ## 4 pillars
+
 Abstraction
 Encapsulation
 Inheritance
