@@ -1,21 +1,22 @@
-# javascript and classes
+# Javascript and Classes
 
-javascript is a prototype language but ES6 provide class facility
+Javascript is a prototype language(not easily give up try to find element from bottom to up till it gets null value) but ES6 provide class facility
 
-## object oriented programming language
+## Object Oriented programming language
 
-## object 
+## Object 
 
-- collection of properties and methods
+- Collection of properties and methods
 - toLowerCase
 
-## why use OOP
+## Why use OOP
 
-## parts of OOP
+## Parts of OOP
 
 - **object literal**
 
-```Javascrpit
+
+```Javascript
         const user = {
         username: "shivam",
         loginCount:88,
@@ -31,7 +32,7 @@ javascript is a prototype language but ES6 provide class facility
 
 ```
 
-- **constructor function** : new keyword used to create new context
+- **Constructor function** : new keyword used to create new context
 
 
 ```Javascript
@@ -61,14 +62,14 @@ javascript is a prototype language but ES6 provide class facility
 
 ```
 
-- prototypes
-- classes
-- instances
+- **Prototypes**
+- **classes**
+- **instancce**
 
 ## 4 pillars
 
-Abstraction
-Encapsulation
-Inheritance
-Polymorphism
+**Abstraction**
+**Encapsulati**n
+**Inheritance**
+**Polymorphism**
 
