@@ -35,7 +35,7 @@ javascript is a prototype language but ES6 provide class facility
 
 
 ```Javascript
-    // new keyowrd used to create new context and 
+    // new keyword used to create new context and 
     // step 1- > empty object create
     // step 2- > construtor function called
     // step 3 -> this keyword inject values
