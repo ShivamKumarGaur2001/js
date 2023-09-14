@@ -174,6 +174,7 @@ Javascript is a prototype language(not easily give up try to find element from b
         anotherUsername.trueLength() // 11
         "hitesh".trueLength() //6
         "iceTea".trueLength() //6
+```
 
 - **Polymorphism**
 
